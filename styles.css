@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Manrope', sans-serif;
+	font-size: 13px;
+	background-color: hsl(210, 46%, 95%);
+	color: hsl(217, 19%, 35%);
+}
+
+p {
+	opacity: 0.8;
+}
+
+.container {
+	width: 300px;
+	border-radius: 10px;
+	box-shadow: 1px 1px 10px 1px rgb(0 0 0 / 8%);
+	background-color: #fff;
+}
+
+.article-image {
+	overflow: hidden;
+	background-image: url('images/drawers.jpg');
+	background-position: center;
+	background-size: cover;
+	width: 300px;
+	height: 200px;
+	border-radius: 10px 10px 0 0;
+}
+
+.article-body {
+	padding: 30px 30px 0px 30px;
+}
+
+.heading {
+	font-size: 16px;
+	font-weight: 700;
+}
+
+.article-text {
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+
+.article-details {
+	margin: 20px 0;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 30px;
+}
+
+.article-author-image-container {
+	width: 30px;
+	position: relative;
+}
+
+.author-image {
+	width: 30px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 50%;
+}
+
+.button-container {
+	margin-left: 40px;
+  position: relative;
+	margin-right: 10px;
+}
+
+.share-article-button {
+	position: relative;
+	z-index: 100;
+	cursor: pointer;
+	padding: 7px;
+	border-radius: 50%;
+	color: #000;
+	outline: none;
+	border: none;
+	background-color: #fff;
+	background-color: hsl(210, 46%, 95%);
+}
+
+.social-container {
+	text-align: left;
+	padding: 22px 10px 10px 10px;
+	padding-left: 30px;
+  border-radius: 0 0 10px 10px;
+	height: 20px;
+  position: absolute;
+  z-index: 1;
+	width: 261px;
+	height: 40px;
+	top: -22px;
+	left: -229px;
+	/* left: -200px; */
+	background-color: hsl(217, 19%, 35%);
+	color: hsl(212, 23%, 69%);
+	letter-spacing: 3px;
+	display: none;
+	/* transition: all ; */
+}
+
+.active {
+	display: inline-block;
+}
+
+.fas {
+	color: hsl(214, 17%, 51%);
+}
+
+.icon {
+	/* padding: 10px 5px 5px 5px; */
+	position: relative;
+	padding-left: 10px;
+	top: 5px;
+}
+
+@media screen and (min-width: 800px) {
+	.container {
+		width: 600px;
+		display: grid;
+		grid-template-columns: 300px 300px;
+	}
+
+	.article-image {
+		height: 100%;
+		border-radius: 10px 0 0 10px;
+	}
+
+	.social-container {
+		border-radius: 0px 0px 10px 0px;
+		/* height: 39px; */
+	}
+}
